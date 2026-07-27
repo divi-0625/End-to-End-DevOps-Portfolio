@@ -1,0 +1,544 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#0F172A;
+
+    color:#F8FAFC;
+
+}
+
+/* Navigation */
+
+header{
+
+    width:100%;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    background:#111827;
+
+    z-index:1000;
+
+}
+
+nav{
+
+    width:90%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 0;
+
+}
+
+.logo{
+
+    color:#38BDF8;
+
+    font-size:28px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#38BDF8;
+
+}
+
+/* Hero */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:72px;
+
+    color:#38BDF8;
+
+}
+
+.hero h3{
+
+    font-size:30px;
+
+    margin-top:10px;
+
+}
+
+.description{
+
+    width:700px;
+
+    max-width:90%;
+
+    margin:30px auto;
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.btn{
+
+    background:#38BDF8;
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+    background:transparent;
+
+    border:2px solid #38BDF8;
+
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+
+    padding:100px 10%;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:40px;
+
+    color:#38BDF8;
+
+    margin-bottom:50px;
+
+}
+
+.about-content{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:#1E293B;
+
+    padding:40px;
+
+    border-radius:12px;
+
+    line-height:1.9;
+
+    color:#CBD5E1;
+
+}
+
+.about-content p{
+
+    margin-bottom:20px;
+
+}
+
+/* ================= SKILLS ================= */
+
+.skills{
+
+    padding:100px 10%;
+
+}
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.skill-card{
+
+    background:#1E293B;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+    border:1px solid #38BDF8;
+
+}
+
+.skill-card h3{
+
+    color:#38BDF8;
+
+    margin-bottom:20px;
+
+}
+
+.skill-card ul{
+
+    list-style:none;
+
+}
+
+.skill-card li{
+
+    margin-bottom:12px;
+
+    color:#CBD5E1;
+
+}
+
+/* ================= PROJECTS ================= */
+
+.projects{
+
+    padding:100px 10%;
+
+}
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.project-card{
+
+    background:#1E293B;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+    border:1px solid #38BDF8;
+
+}
+
+.project-card h3{
+
+    color:#38BDF8;
+
+    margin-bottom:20px;
+
+}
+
+.project-card p{
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.project-card span{
+
+    display:inline-block;
+
+    background:#38BDF8;
+
+    color:#fff;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    margin-right:10px;
+
+    margin-top:10px;
+
+}
+
+/* ================= JOURNEY ================= */
+
+.journey{
+
+    padding:100px 10%;
+
+}
+
+.timeline{
+
+    max-width:900px;
+
+    margin:auto;
+
+    border-left:4px solid #38BDF8;
+
+    padding-left:30px;
+
+}
+
+.timeline-item{
+
+    background:#1E293B;
+
+    padding:25px;
+
+    margin-bottom:30px;
+
+    border-radius:10px;
+
+    position:relative;
+
+}
+
+.timeline-item::before{
+
+    content:"";
+
+    width:18px;
+
+    height:18px;
+
+    background:#38BDF8;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    left:-41px;
+
+    top:32px;
+
+}
+
+.timeline-item h3{
+
+    color:#38BDF8;
+
+    margin-bottom:10px;
+
+}
+
+.timeline-item p{
+
+    color:#CBD5E1;
+
+    line-height:1.7;
+
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+
+    padding:100px 10%;
+
+    text-align:center;
+
+}
+
+.contact-text{
+
+    color:#CBD5E1;
+
+    max-width:700px;
+
+    margin:20px auto 50px;
+
+    line-height:1.8;
+
+}
+
+.contact-links{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.contact-card{
+
+    background:#1E293B;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    color:#F8FAFC;
+
+    transition:.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+    border:1px solid #38BDF8;
+
+}
+
+.contact-card h3{
+
+    margin:15px 0;
+
+    color:#38BDF8;
+
+}
+
+.contact-card p{
+
+    color:#CBD5E1;
+
+    word-break:break-word;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#111827;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#94A3B8;
+
+}
+
+.contact-card i{
+
+    font-size:42px;
+
+    color:#38BDF8;
+
+}
+
+.project-buttons{
+
+    margin-top:25px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.project-buttons .btn{
+
+    padding:10px 18px;
+
+    font-size:14px;
+
+}
