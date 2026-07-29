@@ -42,10 +42,10 @@ end-to-end-devops-portfolio/
 ```
 
 ## Live Demo
-
+g
 Portfolio Website:
 
-https://divi-0625.github.io/end-to-end-devops-portfolio/
+https://divi-0625.github.io/End-to-End-DevOps-Portfolio/
 
 ## Future Enhancements
 
